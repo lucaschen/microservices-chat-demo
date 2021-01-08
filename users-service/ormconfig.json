@@ -1,0 +1,11 @@
+{
+  "cli": {
+    "migrationsDir": "src/db/migrations"
+  },
+  "entities": ["src/db/entities/*.ts"],
+  "logging": false,
+  "migrations": ["src/db/migrations/*.ts"],
+  "synchronize": true,
+  "type": "mysql",
+  "url": "mysql://root:password@users-service-db/db"
+}
