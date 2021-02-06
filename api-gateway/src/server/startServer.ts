@@ -8,6 +8,7 @@ import resolvers from "#root/graphql/resolvers";
 import schema from "#root/graphql/schema";
 
 import formatGraphQLErrors from "./formatGraphQLErrors";
+import injectSession from "./middleware/injectSession";
 
 const PORT = <number>config.get("PORT");
 
@@ -29,6 +30,8 @@ const startServer = () => {
       origin: (origin, cb) => cb(null, true),
     })
   );
+
+  app.use(injectSession);
 
   apolloServer.applyMiddleware({ app, cors: false, path: "/graphql" });
 
