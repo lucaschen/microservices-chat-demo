@@ -4,8 +4,10 @@
   "main": "src/index.html",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "~15.6.1",
     "@types/react": "~17.0.3",
     "@types/react-dom": "~17.0.2",
+    "@types/styled-components": "~5.1.9",
     "parcel-bundler": "1.12.3",
     "typescript": "~4.2.3"
   },
@@ -13,10 +15,17 @@
     "watch": "parcel src/index.html --port=7001"
   },
   "dependencies": {
+    "@apollo/client": "~3.3.19",
     "@blueprintjs/core": "~3.41.0",
     "@blueprintjs/icons": "~3.25.1",
+    "graphql": "~15.5.0",
     "normalize.css": "~8.0.1",
     "react": "~17.0.1",
-    "react-dom": "~17.0.1"
+    "react-dom": "~17.0.1",
+    "recoil": "~0.3.1",
+    "styled-components": "~5.3.0"
+  },
+  "alias": {
+    "#root": "./src"
   }
 }
