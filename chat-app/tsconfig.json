@@ -4,10 +4,11 @@
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "commonjs",
     "paths": {
-      "#root/*": ["./src/*"]
+      "#root/*": ["./src/*"],
+      "#utils/*": ["./src/utils/*"]
     },
     "skipLibCheck": true,
     "strict": true,
